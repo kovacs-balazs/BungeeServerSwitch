@@ -1,0 +1,4 @@
+name: ServerSwitchLogger
+version: '${project.version}'
+main: me.koba1.serverswitch.Main
+description: Server Switch notification
