@@ -28,6 +28,7 @@ public class SwitchEvent implements Listener {
                 .replace("%to%", convertName(p.getServer().getInfo()));
 
         List<String> admins = Configs.get().getStringList("names");
+        if(!admins.contains(p.getName())) return;
 
         for (ProxiedPlayer all : m.getProxy().getPlayers()) {
             if (admins.contains(all.getName())) {

@@ -77,6 +77,9 @@ public class Configs {
             if (!config.contains("player_not_found"))
                 config.set("player_not_found", "&8(&cTeam&8) &c%player% not found!");
 
+            if (!config.contains("staff_chat"))
+                config.set("staff_chat", "&8(&eStaffChat&8) &a%player%&7: &6%message%");
+
             save();
         } catch (IOException e) {
             // owww

@@ -4,27 +4,29 @@ names:
   - name3
   - more
 
-server_switch: '&8(&cTeam&8) &e%player% &7switch server: &c%from% &7-> &c%to%'
-bungee_connected: '&8(&cTeam&8) &e%player% &7joined to proxy!'
-disconnect: '&8(&cTeam&8) &e%player% &7disconnected!'
+server_switch: "&8(&cTeam&8) &e%player% &7switch server: &c%from% &7-> &c%to%"
+bungee_connected: "&8(&cTeam&8) &e%player% &7joined to proxy!"
+disconnect: "&8(&cTeam&8) &e%player% &7disconnected!"
 
 help_box:
-  - '&eServer Switch Broadcaster for Staffs'
-  - ' '
-  - '&7Commands:'
-  - '&e/proxystaff add <playername> - &7Add player to staff list'
-  - '&e/proxystaff remove <playername> - &7Remove player from staff list'
-  - '&e/proxystaff list - &7List of added staffs'
+  - "&eServer Switch Broadcaster for Staffs"
+  - " "
+  - "&7Commands:"
+  - "&e/proxystaff add <playername> - &7Add player to staff list"
+  - "&e/proxystaff remove <playername> - &7Remove player from staff list"
+  - "&e/proxystaff list - &7List of added staffs"
 
-list: '&eStaffs: %list%'
+list: "&eStaffs: %list%"
 list_server_design: "%player% &8(&c%server_name%&8)"
 
-staff_added: '&8(&cTeam&8) &a%player% successfully added to staffs!'
-staff_already_added: '&8(&cTeam&8) &a%player% is already added!'
+staff_added: "&8(&cTeam&8) &a%player% successfully added to staffs!"
+staff_already_added: "&8(&cTeam&8) &a%player% is already added!"
 
-staff_removed: '&8(&cTeam&8) &c%player% successfully removed from staffs!'
-staff_not_added: '&8(&cTeam&8) &c%player% is not added to list!'
+staff_removed: "&8(&cTeam&8) &c%player% successfully removed from staffs!"
+staff_not_added: "&8(&cTeam&8) &c%player% is not added to list!"
 
-unknown_command: '&8(&cTeam&8) &cUnknown command. Please type /proxystaff help to
-  list commands!'
-player_not_found: '&8(&cTeam&8) &c%player% not found!'
+unknown_command: "&8(&cTeam&8) &cUnknown command. Please type /proxystaff help to
+  list commands!"
+player_not_found: "&8(&cTeam&8) &c%player% not found!"
+
+staff_chat: "&8(&eStaffChat&8) &a%player%&7: &6%message%"

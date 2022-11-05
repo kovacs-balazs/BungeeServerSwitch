@@ -3,6 +3,7 @@ package me.koba1.serverswitch.Utils;
 import jdk.jfr.Frequency;
 import me.koba1.serverswitch.Files.Configs;
 import me.koba1.serverswitch.Main;
+import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 
@@ -48,6 +49,18 @@ public class playertools {
     public static boolean isAdded(String name) {
         List<String> list = Configs.get().getStringList("names");
         return list.contains(name);
+    }
+
+    public static void sendToAllStaff(String msg) {
+        List<String> string = Configs.get().getStringList("names");
+        for (String s : string) {
+            if(isOnline(s)) {
+                ProxiedPlayer target = getPlayer(s);
+                if(isStaff(target)) {
+                    target.sendMessage(ChatColor.translateAlternateColorCodes('&', msg));
+                }
+            }
+        }
     }
 
     public static void addToListAndSave(String name) {

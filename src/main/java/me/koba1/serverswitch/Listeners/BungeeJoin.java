@@ -21,6 +21,7 @@ public class BungeeJoin implements Listener {
             ProxiedPlayer p = e.getPlayer();
             String message = ChatColor.translateAlternateColorCodes('&', Configs.get().getString("bungee_connected")).replace("%player%", p.getName());
             List<String> admins = Configs.get().getStringList("names");
+            if(!admins.contains(p.getName())) return;
 
             for (ProxiedPlayer all : m.getProxy().getPlayers()) {
                 if(admins.contains(all.getName())) {

@@ -1,6 +1,7 @@
 package me.koba1.serverswitch;
 
 import me.koba1.serverswitch.Commands.Command_main;
+import me.koba1.serverswitch.Commands.Command_staffchat;
 import me.koba1.serverswitch.Files.Configs;
 import me.koba1.serverswitch.Listeners.BungeeJoin;
 import me.koba1.serverswitch.Listeners.DisconnectEvent;
@@ -26,6 +27,7 @@ public final class Main extends Plugin {
         getProxy().getPluginManager().registerListener(this, new SwitchEvent());
 
         getProxy().getPluginManager().registerCommand(this, new Command_main());
+        getProxy().getPluginManager().registerCommand(this, new Command_staffchat());
         getLogger().info("Bungee Server Broadcaster Successfully Loaded!");
     }
 
